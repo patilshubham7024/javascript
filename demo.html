@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="/myScript.js">myScript</script>
+    <script>
+        let x = 10;
+    </script>
+    <div id="count"></div>
+
+    <p id="date">Display here something...</p>
+    <button type="button" id="mybutton" onclick="document.getElementById('date').innerHTML = Date(),
+                                    document.getElementById('mybutton').innerHTML = 'Dont click now'
+                                    ">
+        Click here to get date</button>
+
+    <!-- <div>
+            <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on
+                the light</button>
+            <img id="myImage" style="width:100px">
+            <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off
+                the light</button>
+        </div> -->
+    <h1 id="myName"></h1>
+    <button id="name" onclick="myFunction()">What's my name?</button>
+    <script>
+        // function myFunction() {
+        //     document.getElementById('myName').innerHTML = 'Shubham Patil';
+        //     x++;
+        //     console.log(x);
+        // }
+    </script>
+
+    <button onclick="print()">Print page</button>
+
+    <div>
+        <button onclick="document.getElementById('addition').innerText=add(++x,6)">Add</button>
+        <div id="addition"></div>
+    </div>
+<div>
+    <button onclick="document.getElementById('helmet').innerHTML=getHelmet()">Show Helmet</button>
+    <div id="helmet"></div>
+</div>
+
+</body>
+
+</html>
